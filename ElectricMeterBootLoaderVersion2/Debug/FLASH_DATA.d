@@ -1,0 +1,10 @@
+FLASH_DATA.d FLASH_DATA.o: ../FLASH_DATA.c ../STD_TYPES.h ../STD_BITS.h \
+  ../STD_MEMORY_MAP.h ../FLASH_DATA.h
+
+../STD_TYPES.h:
+
+../STD_BITS.h:
+
+../STD_MEMORY_MAP.h:
+
+../FLASH_DATA.h:

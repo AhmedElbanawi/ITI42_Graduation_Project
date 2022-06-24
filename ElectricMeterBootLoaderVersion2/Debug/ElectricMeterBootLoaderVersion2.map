@@ -1,0 +1,592 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./DIO.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./APP.o (__do_clear_bss)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+                              ./CFG_PAR.o (__lshrdi3)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+                              ./CFG_PAR.o (__ashldi3)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./APP.o
+LOAD ./BOOTLOADER.o
+LOAD ./BOOTLOADER_STATES.o
+LOAD ./CFG_PAR.o
+LOAD ./CRC.o
+LOAD ./DIO.o
+LOAD ./DIO_CFG.o
+LOAD ./FLASHER.o
+LOAD ./FLASH_DATA.o
+LOAD ./PARSER.o
+LOAD ./RECORD.o
+LOAD ./UDS.o
+LOAD ./URT.o
+LOAD ./main.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+Address of section .text set to 0x7000
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00007000      0xcfa
+ *(.vectors)
+ .vectors       0x00007000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00007000                __vectors
+                0x00007000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00007054                . = ALIGN (0x2)
+                0x00007054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00007054        0x0 linker stubs
+ *(.trampolines*)
+                0x00007054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00007054                __ctors_start = .
+ *(.ctors)
+                0x00007054                __ctors_end = .
+                0x00007054                __dtors_start = .
+ *(.dtors)
+                0x00007054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00007054        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00007054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00007054        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00007060       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00007060                __do_copy_data
+ .init4         0x00007076       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00007076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00007086        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000708e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000708e                __vector_1
+                0x0000708e                __vector_12
+                0x0000708e                __bad_interrupt
+                0x0000708e                __vector_6
+                0x0000708e                __vector_3
+                0x0000708e                __vector_11
+                0x0000708e                __vector_13
+                0x0000708e                __vector_17
+                0x0000708e                __vector_19
+                0x0000708e                __vector_7
+                0x0000708e                __vector_5
+                0x0000708e                __vector_4
+                0x0000708e                __vector_9
+                0x0000708e                __vector_2
+                0x0000708e                __vector_15
+                0x0000708e                __vector_8
+                0x0000708e                __vector_14
+                0x0000708e                __vector_10
+                0x0000708e                __vector_16
+                0x0000708e                __vector_18
+                0x0000708e                __vector_20
+ .text          0x00007092        0x0 ./APP.o
+ .text          0x00007092        0x0 ./BOOTLOADER.o
+ .text          0x00007092        0x0 ./BOOTLOADER_STATES.o
+ .text          0x00007092        0x0 ./CFG_PAR.o
+ .text          0x00007092        0x0 ./CRC.o
+ .text          0x00007092        0x0 ./DIO.o
+ .text          0x00007092        0x0 ./DIO_CFG.o
+ .text          0x00007092        0x0 ./FLASHER.o
+ .text          0x00007092        0x0 ./FLASH_DATA.o
+ .text          0x00007092        0x0 ./PARSER.o
+ .text          0x00007092        0x0 ./RECORD.o
+ .text          0x00007092        0x0 ./UDS.o
+ .text          0x00007092        0x0 ./URT.o
+ .text          0x00007092        0x0 ./main.o
+ .text          0x00007092        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00007092        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00007092        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00007092       0xfe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+                0x00007092                __lshrdi3
+ .text          0x00007190       0xfe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+                0x00007190                __ashldi3
+                0x0000728e                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Display_Record
+                0x0000728e       0x3e ./APP.o
+                0x0000728e                Display_Record
+ .text.APP_Rx   0x000072cc       0x74 ./APP.o
+                0x000072cc                APP_Rx
+ .text.APP_Read_State
+                0x00007340       0x28 ./APP.o
+                0x00007340                APP_Read_State
+ .text.APP_Write_State
+                0x00007368       0x30 ./APP.o
+                0x00007368                APP_Write_State
+ .text.BootLoader_Indicator
+                0x00007398       0x76 ./BOOTLOADER.o
+ .text.BOOTLOADER_Main
+                0x0000740e       0x9a ./BOOTLOADER.o
+                0x0000740e                BOOTLOADER_Main
+ .text.BOOTLOADER_STATE_Init
+                0x000074a8        0x6 ./BOOTLOADER_STATES.o
+                0x000074a8                BOOTLOADER_STATE_Init
+ .text.BOOTLOADER_STATE_Get
+                0x000074ae        0x6 ./BOOTLOADER_STATES.o
+                0x000074ae                BOOTLOADER_STATE_Get
+ .text.BOOTLOADER_STATE_Set
+                0x000074b4        0x6 ./BOOTLOADER_STATES.o
+                0x000074b4                BOOTLOADER_STATE_Set
+ .text.CFG_PAR_Balance_Update
+                0x000074ba      0x27e ./CFG_PAR.o
+                0x000074ba                CFG_PAR_Balance_Update
+ .text.CFG_PAR_Fees_Update
+                0x00007738       0x2a ./CFG_PAR.o
+                0x00007738                CFG_PAR_Fees_Update
+ .text.Asci2Hex
+                0x00007762       0x74 ./CRC.o
+                0x00007762                Asci2Hex
+ .text.CRC_Check
+                0x000077d6       0x78 ./CRC.o
+                0x000077d6                CRC_Check
+ .text.DIO_WRITE_PIN_VALUE
+                0x0000784e       0x64 ./DIO.o
+                0x0000784e                DIO_WRITE_PIN_VALUE
+ .text.DIO_INIT
+                0x000078b2       0xe2 ./DIO.o
+                0x000078b2                DIO_INIT
+ .text.DIO_READ_PIN_VALUE
+                0x00007994       0x2e ./DIO.o
+                0x00007994                DIO_READ_PIN_VALUE
+ .text.DIO_WRITE_PORT
+                0x000079c2       0x16 ./DIO.o
+                0x000079c2                DIO_WRITE_PORT
+ .text.DIO_Read_PORT
+                0x000079d8       0x16 ./DIO.o
+                0x000079d8                DIO_Read_PORT
+ .text.boot_program_page
+                0x000079ee       0xb0 ./FLASHER.o
+                0x000079ee                boot_program_page
+ .text.FLASH_Data_Write
+                0x00007a9e       0x10 ./FLASH_DATA.o
+                0x00007a9e                FLASH_Data_Write
+ .text.FLASH_Data_Read
+                0x00007aae        0xe ./FLASH_DATA.o
+                0x00007aae                FLASH_Data_Read
+ .text.Display_Page
+                0x00007abc       0x24 ./PARSER.o
+                0x00007abc                Display_Page
+ .text.PARSER_Record
+                0x00007ae0      0x108 ./PARSER.o
+                0x00007ae0                PARSER_Record
+ .text.RECORD_Get
+                0x00007be8       0x2a ./RECORD.o
+                0x00007be8                RECORD_Get
+ .text.UDS_Send_Negative_Response
+                0x00007c12        0x8 ./UDS.o
+                0x00007c12                UDS_Send_Negative_Response
+ .text.UDS_Send_Positive_Response
+                0x00007c1a        0x8 ./UDS.o
+                0x00007c1a                UDS_Send_Positive_Response
+ .text.UDS_Read_Request
+                0x00007c22       0x3a ./UDS.o
+                0x00007c22                UDS_Read_Request
+ .text.UDS_Write_Request
+                0x00007c5c       0x2e ./UDS.o
+                0x00007c5c                UDS_Write_Request
+ .text.URT_Rx   0x00007c8a       0x12 ./URT.o
+                0x00007c8a                URT_Rx
+ .text.URT_Tx   0x00007c9c       0x12 ./URT.o
+                0x00007c9c                URT_Tx
+ .text.URT_Init
+                0x00007cae       0x20 ./URT.o
+                0x00007cae                URT_Init
+ .text.URT_Rx_Char
+                0x00007cce        0x8 ./URT.o
+                0x00007cce                URT_Rx_Char
+ .text.URT_Tx_Char
+                0x00007cd6        0x8 ./URT.o
+                0x00007cd6                URT_Tx_Char
+ .text.main     0x00007cde       0x18 ./main.o
+                0x00007cde                main
+ .text.libgcc   0x00007cf6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00007cf6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00007cf6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00007cf6                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00007cf6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00007cf6                exit
+                0x00007cf6                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00007cf6        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00007cfa                _etext = .
+
+.data           0x00800060       0x48 load address 0x00007cfa
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./APP.o
+ .data          0x00800060        0x0 ./BOOTLOADER.o
+ .data          0x00800060        0x0 ./BOOTLOADER_STATES.o
+ .data          0x00800060        0x0 ./CFG_PAR.o
+ .data          0x00800060        0x0 ./CRC.o
+ .data          0x00800060        0x0 ./DIO.o
+ .data          0x00800060        0x0 ./DIO_CFG.o
+ .data          0x00800060        0x0 ./FLASHER.o
+ .data          0x00800060        0x0 ./FLASH_DATA.o
+ .data          0x00800060        0x0 ./PARSER.o
+ .data          0x00800060        0x0 ./RECORD.o
+ .data          0x00800060        0x0 ./UDS.o
+ .data          0x00800060        0x0 ./URT.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ *(.data*)
+ .data.Pin_Direction
+                0x00800060       0x20 ./DIO_CFG.o
+                0x00800060                Pin_Direction
+ *(.rodata)
+ *(.rodata*)
+ .rodata.Reg.1344
+                0x00800080        0x8 ./DIO.o
+ .rodata.Reg.1338
+                0x00800088        0x8 ./DIO.o
+ .rodata.Reg.1321
+                0x00800090        0x8 ./DIO.o
+ .rodata.Reg.1296
+                0x00800098        0x8 ./DIO.o
+ .rodata.Reg.1262
+                0x008000a0        0x8 ./DIO.o
+ *(.gnu.linkonce.d*)
+                0x008000a8                . = ALIGN (0x2)
+                0x008000a8                _edata = .
+                0x008000a8                PROVIDE (__data_end, .)
+
+.bss            0x008000a8      0x190
+                0x008000a8                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008000a8        0x0 ./APP.o
+ .bss           0x008000a8        0x0 ./BOOTLOADER.o
+ .bss           0x008000a8        0x0 ./BOOTLOADER_STATES.o
+ .bss           0x008000a8        0x0 ./CFG_PAR.o
+ .bss           0x008000a8        0x0 ./CRC.o
+ .bss           0x008000a8        0x0 ./DIO.o
+ .bss           0x008000a8        0x0 ./DIO_CFG.o
+ .bss           0x008000a8        0x0 ./FLASHER.o
+ .bss           0x008000a8        0x0 ./FLASH_DATA.o
+ .bss           0x008000a8        0x0 ./PARSER.o
+ .bss           0x008000a8        0x0 ./RECORD.o
+ .bss           0x008000a8        0x0 ./UDS.o
+ .bss           0x008000a8        0x0 ./URT.o
+ .bss           0x008000a8        0x0 ./main.o
+ .bss           0x008000a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008000a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008000a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008000a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .bss           0x008000a8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ *(.bss*)
+ .bss.Current_Record
+                0x008000a8        0x2 ./APP.o
+ .bss.App_State_Download
+                0x008000aa        0x1 ./APP.o
+ .bss.App       0x008000ab       0x80 ./APP.o
+ .bss.BootLoader_Indicator_Curr_State.1411
+                0x0080012b        0x1 ./BOOTLOADER.o
+ .bss.Bootloader_State
+                0x0080012c        0x1 ./BOOTLOADER.o
+ .bss.UDS_Req_Type
+                0x0080012d        0x1 ./BOOTLOADER.o
+ .bss.Bootloader_State
+                0x0080012e        0x1 ./BOOTLOADER_STATES.o
+ .bss.NO_Pages.1285
+                0x0080012f        0x2 ./PARSER.o
+ .bss.Idx_Data.1284
+                0x00800131        0x1 ./PARSER.o
+ .bss.Record    0x00800132      0x106 ./RECORD.o
+ *(COMMON)
+                0x00800238                PROVIDE (__bss_end, .)
+                0x00007cfa                __data_load_start = LOADADDR (.data)
+                0x00007d42                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800238        0x0
+                0x00800238                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800238                PROVIDE (__noinit_end, .)
+                0x00800238                _end = .
+                0x00800238                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000      0x192
+ *(.eeprom*)
+ .eeprom        0x00810000      0x192 ./BOOTLOADER.o
+                0x00810000                Updates
+                0x00810192                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x29e8
+ *(.stab)
+ .stab          0x00000000      0x768 ./APP.o
+ .stab          0x00000768      0x504 ./BOOTLOADER.o
+                                0x7c8 (size before relaxing)
+ .stab          0x00000c6c      0x180 ./BOOTLOADER_STATES.o
+                                0x1b0 (size before relaxing)
+ .stab          0x00000dec      0x4c8 ./CFG_PAR.o
+                                0x768 (size before relaxing)
+ .stab          0x000012b4      0x240 ./CRC.o
+                                0x2f4 (size before relaxing)
+ .stab          0x000014f4      0x3c0 ./DIO.o
+                                0x4e0 (size before relaxing)
+ .stab          0x000018b4       0xfc ./DIO_CFG.o
+                                0x21c (size before relaxing)
+ .stab          0x000019b0      0x2c4 ./FLASHER.o
+                                0x4f8 (size before relaxing)
+ .stab          0x00001c74      0x1bc ./FLASH_DATA.o
+                                0x270 (size before relaxing)
+ .stab          0x00001e30      0x2f4 ./PARSER.o
+                                0x570 (size before relaxing)
+ .stab          0x00002124      0x198 ./RECORD.o
+                                0x288 (size before relaxing)
+ .stab          0x000022bc      0x36c ./UDS.o
+                                0x60c (size before relaxing)
+ .stab          0x00002628      0x270 ./URT.o
+                                0x360 (size before relaxing)
+ .stab          0x00002898      0x150 ./main.o
+                                0x2ac (size before relaxing)
+
+.stabstr        0x00000000     0x174c
+ *(.stabstr)
+ .stabstr       0x00000000     0x174c ./APP.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x40
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .debug_aranges
+                0x00000020       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+
+.debug_pubnames
+                0x00000000       0x40
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .debug_pubnames
+                0x00000020       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+
+.debug_info     0x00000000      0x2fe
+ *(.debug_info)
+ .debug_info    0x00000000      0x17f c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .debug_info    0x0000017f      0x17f c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x1dc
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xee c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .debug_abbrev  0x000000ee       0xee c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+
+.debug_line     0x00000000      0x1ae
+ *(.debug_line)
+ .debug_line    0x00000000       0xd7 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .debug_line    0x000000d7       0xd7 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+
+.debug_frame    0x00000000       0x40
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .debug_frame   0x00000020       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+
+.debug_str      0x00000000       0xf5
+ *(.debug_str)
+ .debug_str     0x00000000       0xeb c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+                                0x131 (size before relaxing)
+ .debug_str     0x000000eb        0xa c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+                                0x131 (size before relaxing)
+
+.debug_loc      0x00000000      0x1f0
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xf8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lshrdi3.o)
+ .debug_loc     0x000000f8       0xf8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(ElectricMeterBootLoaderVersion2.elf elf32-avr)
+LOAD linker stubs
